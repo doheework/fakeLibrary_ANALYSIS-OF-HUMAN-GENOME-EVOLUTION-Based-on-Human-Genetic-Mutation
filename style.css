@@ -5,28 +5,48 @@ body {
     background-attachment: fixed;
   }
 
-.mockup_front{
+.mockup{
     position: absolute;
     width: 712px;
-    height: 823px;  
-    left: 50%;
+    max-width:90%;
+    height:auto;
+    left: 54%;
     top: 123px;
-    background: url(xt_mockup_fornt_1.png);
-    background-repeat:no-repeat;
-    background-size:cover;  
     transform: translate(-50%,0%);
 }
 
-.mockup_front:hover{
+.mockup_front{
     position: absolute;
-    background: url(xt_mockup_back_1.png);
-    background-repeat:no-repeat;
-    background-size:cover;
+    width: 712px;
+    max-width:90%;
+    height:auto;
+    text-align:center;
+}
+
+.mockup_inside{
+    position: absolute;
+    width: 712px;
+    max-width:90%;
+    height:auto;
+    text-align:center;
+    opacity:0;
+    z-index:2;
+}
+
+@media screen and (max-width:600px) {
+    .mockup{
+      top:160px;
+    }
+  }
+
+
+.mockup:hover .mockup_inside{
+    opacity:1;
 }
 
 .부제{
     position: absolute;
-    width: 627px;
+    width: 57%;
     height: 20px;
     top: 979px;
     left: 50%;
@@ -44,10 +64,22 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (max-width:600px) {
+    .부제{
+      top: 550px;
+    }
+  }
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .부제{
+        top:930px;
+    }
+}
+
+
 .backname{
     position: fixed;
-    width: 931px;
-    height: 45px;
+    width: 70%;
     left: 95px;
     top: 25px;
 
@@ -60,6 +92,14 @@ body {
     color: #FFFFFF;
 }
 
+@media screen and (max-width:600px) {
+    .backname{
+      left:70px;
+      font-size:25px;
+      line-height: 35px;
+    }
+  }
+
 .arrow{
     position: fixed;
     left: 50px;
@@ -67,6 +107,12 @@ body {
     font-size: 36px;
     color: #FFFFFF;
 }
+
+@media screen and (max-width:600px) {
+    .arrow{
+      left:27px;
+    }
+  }
 
 .arrow:hover {
     cursor:pointer;
@@ -94,11 +140,15 @@ body {
     z-index:1;
 }
 
-h {
-    font-family: Comic Neue;
-    font-style: normal; 
-    font-weight: normal;
+@media screen and (max-width:600px) {
+    .text{
+      font-size: 15px;
+      width: 75%;
+      top:630px;
+    }
   }
+
+
 
 .수업, .자비에, .책, .밝기, .by, .프린트, .옥스포드, .네안데르탈인, .대뇌화, .스톰, .유전자, .돌연변이, .멜라, .사진, .전이, .몸통, .cia, .레이븐, .엑스맨, .브라이언, .재검토, .제목, .세바스천 {
     box-shadow: inset 0 -1px 0 white; 
