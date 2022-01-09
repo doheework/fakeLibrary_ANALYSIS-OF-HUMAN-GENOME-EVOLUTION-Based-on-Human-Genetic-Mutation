@@ -5,12 +5,17 @@ body {
     background-attachment: fixed;
   }
 
+header {
+    position:fixed;
+    z-index:1;
+}
+
 .mockup{
     position: absolute;
     width: 712px;
     max-width:90%;
     height:auto;
-    left: 54%;
+    left: 50%;
     top: 123px;
     transform: translate(-50%,0%);
 }
@@ -36,6 +41,7 @@ body {
 @media screen and (max-width:600px) {
     .mockup{
       top:160px;
+      left:45%;
     }
   }
 
@@ -48,8 +54,8 @@ body {
     position: absolute;
     width: 57%;
     height: 20px;
-    top: 979px;
-    left: 50%;
+    top: 800px;
+    left: 44%;
     transform: translate(-50%,0%);
 
     font-family: Apple SD Gothic Neo;
@@ -66,22 +72,22 @@ body {
 
 @media screen and (max-width:600px) {
     .부제{
-      top: 550px;
+      top: 430px;
     }
   }
 
 @media screen and (min-width: 700px) and (max-width: 900px){
     .부제{
-        top:930px;
+        top:800px;
     }
 }
 
 
-.backname{
+h1{
     position: fixed;
     width: 70%;
     left: 95px;
-    top: 25px;
+    top: 0px;
 
     font-family: Comic Neue;
     font-style: normal;
@@ -93,10 +99,11 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    .backname{
+    h1{
       left:70px;
       font-size:25px;
       line-height: 35px;
+      top:10px;
     }
   }
 
@@ -144,11 +151,15 @@ body {
     .text{
       font-size: 15px;
       width: 75%;
-      top:630px;
+      top:700px;
     }
   }
 
-
+  i{
+    font-family: Comic Neue;
+    font-style: normal;
+    font-weight: normal;
+}
 
 .수업, .자비에, .책, .밝기, .by, .프린트, .옥스포드, .네안데르탈인, .대뇌화, .스톰, .유전자, .돌연변이, .멜라, .사진, .전이, .몸통, .cia, .레이븐, .엑스맨, .브라이언, .재검토, .제목, .세바스천 {
     box-shadow: inset 0 -1px 0 white; 
@@ -469,11 +480,11 @@ body {
 
 .세바스천i{
     position:fixed;
-    width: 390px;
-    height: 303px;
-    top:0px;
+    width: 346px;
+    height: 761px;    
+    bottom:0px;
     right:100%;
-    max-width:90%;
+    max-width:70%;
     height: auto;
     z-index:2;
     pointer-events: none;

@@ -242,7 +242,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".세바스천").mouseover(function(){
-        var image = $(".제목i");
+        var image = $(".세바스천i");
     $(".세바스천i").show();
     $(".세바스천i").stop().animate({right:window.innerWidth-image.innerWidth()});
     });
